@@ -1,0 +1,42 @@
+{
+  "name": "permit-utils",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/permit-utils/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/permit-utils",
+        "main": "libs/permit-utils/src/index.ts",
+        "tsConfig": "libs/permit-utils/tsconfig.lib.json",
+        "assets": ["libs/permit-utils/*.md"],
+        "updateBuildableProjectDepsInPackageJson": true,
+        "buildableProjectDepsInPackageJsonType": "dependencies"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/permit-utils/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/permit-utils/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}
