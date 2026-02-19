@@ -160,7 +160,7 @@ jobs:
       # Actually run tests, building repo
       - name: Cypress run
         id: cypress-run
-        uses: cypress-io/github-action@0f330ebf0d60f87608ed72f1d6232e5644aa3171 # v7.1.1
+        uses: cypress-io/github-action@e44ee0fa67251ab7e2d854d85b3a466577f47d14 # v7.1.3
         with:
           wait-on: http://[::1]:3000
           wait-on-timeout: 600
