@@ -1,4 +1,4 @@
-# CoW Protocol Front-End • Contribution Guide
+# Akora Protocol Front-End • Contribution Guide
 
 Welcome! This document is the canonical set of rules every contributor **and every code assistant** must obey.  
 Make sure you follow them for a speedy review.
