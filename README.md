@@ -22,7 +22,7 @@ It is structured for efficient local development, configurable runtime behavior,
 
 ## Overview
 
-The Akora website is maintained in an Nx monorepo designed for scalable frontend development.
+Built on Nx monorepo architecture, the Akora website provides a robust foundation for scalable, maintainable frontend development.
 
 ## Project Priorities
 
