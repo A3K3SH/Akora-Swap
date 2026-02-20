@@ -16,4 +16,4 @@ export const updateOpenFortuneAtom = atom(null, (get, set, openFortune: FortuneI
   })
 })
 
-export const isFortunesFeatureDisabledAtom = atomWithStorage<boolean>('isFortunesFeatureDisabled', false)
+export const isFortunesFeatureDisabledAtom = atomWithStorage<boolean>('isFortunesFeatureDisabled', true)
