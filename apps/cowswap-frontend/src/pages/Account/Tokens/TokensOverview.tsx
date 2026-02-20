@@ -48,7 +48,6 @@ import {
   TokenSearchInput,
 } from './styled'
 
-import Delegate from '../Delegate'
 import { CardsLoader } from '../styled'
 
 const TokensLoader = styled(CardsLoader)`
@@ -280,9 +279,7 @@ function TokensTableContent(props: TokensTableContentProps): ReactNode {
       balances={balances}
       tokensData={tokensData}
       allowances={allowances}
-    >
-      <Delegate dismissable rowOnMobile />
-    </TokenTable>
+    />
   )
 }
 
