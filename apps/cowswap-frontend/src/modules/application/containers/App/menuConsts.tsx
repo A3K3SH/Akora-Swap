@@ -101,10 +101,9 @@ export const NAV_ITEMS = (chainId: SupportedChainId): MenuItem[] => {
 
   const moreItem: MenuItem = {
     label: i18n._(MORE_ITEM.label),
-    children: MORE_ITEM.children.map(({ href, label, external }) => ({
+    children: MORE_ITEM.children.map(({ href, label }) => ({
       href,
       label: i18n._(label),
-      external,
     })),
   }
 

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { MouseEvent, useCallback, useEffect, useMemo, useState } from 'react'
 
 import ArrowIcon from '@cowprotocol/assets/cow-swap/arrow.svg'
 import CowImage from '@cowprotocol/assets/cow-swap/cow_token.svg'
@@ -313,7 +313,7 @@ export default function Profile() {
                 <ExtLink
                   title={t`View contract`}
                   href={getBlockExplorerUrl(chainId, 'token', cowContractAddress)}
-                  onClick={(event) => {
+                  onClickOptional={(event: MouseEvent<HTMLAnchorElement>) => {
                     event.preventDefault()
                     event.stopPropagation()
                   }}

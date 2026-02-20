@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import { MouseEvent, ReactNode } from 'react'
 
 import { getChainInfo } from '@cowprotocol/common-const'
 import { getExplorerBaseUrl } from '@cowprotocol/common-utils'
@@ -91,7 +91,7 @@ export function NetworksList(props: NetworksListProps): ReactNode {
 
               <styledEl.ActiveRowLink
                 href={getExplorerBaseUrl(targetChainId)}
-                onClick={(event) => {
+                onClickOptional={(event: MouseEvent<HTMLAnchorElement>) => {
                   event.preventDefault()
                   event.stopPropagation()
                 }}
