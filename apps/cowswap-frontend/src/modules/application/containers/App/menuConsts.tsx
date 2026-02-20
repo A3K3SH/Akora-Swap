@@ -5,9 +5,6 @@ import { MenuItem, ProductVariant } from '@cowprotocol/ui'
 import { i18n } from '@lingui/core'
 import { msg } from '@lingui/core/macro'
 
-import AppziButton from 'legacy/components/AppziButton'
-
-
 import { Routes } from 'common/constants/routes'
 
 export const PRODUCT_VARIANT = ProductVariant.CowSwap
@@ -110,8 +107,4 @@ export const NAV_ITEMS = (chainId: SupportedChainId): MenuItem[] => {
   return [accountItem, moreItem]
 }
 
-export const ADDITIONAL_FOOTER_CONTENT = (
-  <>
-    <AppziButton />
-  </>
-)
+export const ADDITIONAL_FOOTER_CONTENT = null
